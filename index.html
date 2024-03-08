@@ -69,14 +69,14 @@
                             <label for="password">Password</label>
                             <div id="password-msg"></div>
                         </div>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" oninput="setPassword()">
                     </div>
                     <div class="form-group">
                         <div class="label">
                             <label for="confirm-password">Confirm Password</label>
                             <div id="confirm-password-msg"></div>
                         </div>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <input type="password" id="confirm-password" name="confirm-password" oninput="setConPassword()">
                     </div>
                     <button class="submit-btn" onclick="validateForm2()">Submit</button>
                 </div>
