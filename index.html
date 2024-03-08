@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="navbar">
+            <div id="floater"></div>
+            <div class="nav-item active" onclick="setActiveTab('task-1')">Task 1</div>
+            <div class="nav-item" onclick="setActiveTab('task-2')">Task 2</div>
+        </div>
+        <div id="content">
+            <div id="task-1">
+                <h1>Blank Form Validation</h1>
+                <div class="task-1-form">
+                    <div id="general-msg">
+                    </div>
+                    <div class="form-group">
+                        <div class="label"><label for="name">Name</label>
+                            <div id="name-msg"></div>
+                        </div>
+                        <input type="name" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="useremail">Email</label>
+                            <div id="email-msg"></div>
+                        </div>
+                        <input type="text" id="useremail" name="useremail">
+                    </div>
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="website">Website</label>
+                            <div id="website-msg"></div>
+                        </div>
+                        <input type="website" id="website" name="website">
+                    </div>
+                    <div class="form-group
+                ">
+                        <div class="label">
+                            <label for="message">Message</label>
+                            <div id="message-msg"></div>
+                        </div>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button class="submit-btn" onclick="validateForm1()">Submit</button>
+                </div>
+            </div>
+            <div id="task-2">
+                <h1>Passwordfield Validation</h1>
+                <div class="task-1-form">
+                    <div id="general-msg">
+                        Please fill all fields
+                    </div>
+                    <div class="form-group">
+                        <div class="label"><label for="email">Email</label>
+                            <div id="email-msg"></div>
+                        </div>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="password">Password</label>
+                            <div id="password-msg"></div>
+                        </div>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="confirm-password">Confirm Password</label>
+                            <div id="confirm-password-msg"></div>
+                        </div>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                    <button class="submit-btn" onclick="validateForm2()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made with ❤️ by <a href="https://github.com/Ashish-Sunil-Vaidya">Ashish-Sunil-Vaidya</a>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
