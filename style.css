@@ -105,6 +105,9 @@
 
 .success-msg {
   background-color: green;
+  text-align: center;
+  color: white;
+  padding: 5px;
 }
 
 #general-msg {
@@ -126,7 +129,6 @@
   transform: translateY(-50%);
   left: 20px;
   display: grid;
-  gap: 10px;
   background-color: white;
   border-radius: 5px;
   overflow: hidden;
